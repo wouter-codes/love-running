@@ -50,7 +50,7 @@ header a {
     list-style-type: none;
 }
 
-#menu li {
+#menu > li {
     margin-bottom: 1em;
 }
 
@@ -88,13 +88,13 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
-    background: url(../images/hero-image.webp) no-repeat center center/cover;
 }
 
 /* Hero section */
 #hero {
     height: 600px;
     width: 100%;
+    background: url(../images/hero-image.webp) no-repeat center center/cover;
     position: relative;
 }
 
@@ -113,6 +113,49 @@ main {
 #cover-text > h2,
 #cover-text > h3 {
     color: #ffffff;
+}
+
+#reasons {
+    margin: 20px auto;
+    width: 90%;
+}
+
+#reasons h2 {
+    font-size: 280%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+#benefits-physical > div,
+#benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#circle-cover-bg {
+    background: url(../images/reasons-image.webp) no-repeat top center / cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    /* Makes picture a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
